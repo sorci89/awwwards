@@ -40,3 +40,61 @@ button, input, textarea, select {
     -webkit-appearance: none !important;
     border-radius: 0
 }
+
+.bence .bottle-container, .bence .text-container{
+    z-index: -1;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    
+    height: 40vw;
+    min-height: 500px;
+    opacity: 0.06;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.bence .bottle{
+    height: 100%;
+}
+
+@media screen and (max-width: 1000px){
+    .bence .bottle4{
+        display: none;
+    }
+    .bence .bottle-container{
+        height: 65vw;
+    }
+}  
+
+.bence .text-container{
+    opacity: 1;
+    display: grid;
+    text-align: center;
+    color: #121247;
+
+    line-height: 1.03;
+    letter-spacing: 0em;
+    font-family: Catacumba Pro;
+}
+
+.bence .text-container .logo img{
+    width: 10vw;
+}
+
+.bence .text-container .animated-text{
+    font-size: 5.7vw;
+}
+
+.bence .text-container .animated-text .text2 {
+    color: #ffd732;
+}
+
+.bence .text-container .question-text{
+    font-size: 1.6vw;
+    padding: 0 20% 7%;
+    line-height: 1.5;
+}
