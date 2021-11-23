@@ -35,7 +35,14 @@ function loadLandingPage(){
   </div>
   <div class="animated-text"><span class="text1">Citadelle Gin,</span><br><span class="text2">LE gin de france</span></div>
   <div class="question-text">Avez-vous l’âge légal afin de consommer de l’alcool dans votre pays ?</div>
-      <div class="buttons">GOMBOK...................................HELYE</div>
+<div class="buttonDiv">
+  <button type="button" id="buttonOui" class="button">
+     <span class="buttonSpan buttonSpanOui">Oui</span>
+  </button>
+  <button type="button" id="buttonNon" class="button">
+      <span class="buttonSpan buttonSpanNon">Non</span>
+  </button></div>
+</div>
       </div>
       </div>
   `); 

@@ -265,4 +265,79 @@ button, input, textarea, select {
     transform: translateX(67vw);
 }
 
+/*Eszti gombok */
 
+.buttonDiv {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    margin: 3vh 0;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    height: 11vh;
+   
+    pointer-events: none;
+}
+  
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    margin: 0 1vh;
+    padding: 0 4vh;
+    
+    background-color: transparent;
+    
+    text-transform: uppercase;
+    text-align: center;
+}
+  
+.buttonSpan {
+    width: 10vw;
+    font-weight: 500;
+    font-size: 3vw;
+    text-transform: Capitalize;
+    color: #121247;
+}
+  
+.buttonDiv:hover > * {
+    opacity: 0.5;
+}
+  
+.buttonDiv:hover > *:hover {
+   transform: scale(1.1);
+    opacity: 1;
+}
+  
+.buttonDiv > * {
+    pointer-events: auto;
+}
+  
+.buttonSpanOui::before {
+    content: "";
+    border-top: 1.5px solid #d0d0d0;
+    display: block;
+}
+  
+.buttonSpanOui::after {
+    content: "";
+    border-bottom: 1.5px solid #d0d0d0;
+    display: block;
+}
+.buttonSpanNon::before {
+    content: "";
+    border-top: 1.5px solid #d0d0d0;
+    display: block;
+}
+.buttonSpanNon::after {
+    content: "";
+    border-bottom: 1.5px solid #d0d0d0;
+    display: block;
+}
+  
+  
