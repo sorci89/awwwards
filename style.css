@@ -61,19 +61,19 @@ button, input, textarea, select {
 .basicblue{
     position: absolute;
     left: 230vw;
-    width: 220vw;
-    height: 1.7vh;
+    width: 250vw;
+    height: 1.6vh;
     background-color: #121147;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-delay: 1s;
 }
 .yellow{
     position: absolute;
     left: 230vw;
-    width: 220vw;
-    height: 1.7vh; 
+    width: 250vw;
+    height: 1.6vh; 
     background-color: #FED633;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-delay: 1s;
 }
 .poz1{
@@ -110,34 +110,34 @@ button, input, textarea, select {
 }
 
 @keyframes example1 {
-    0%   {left:-250vw;}
-    75%   {left:180vw;}
+    0%   {left:-300vw;}
+    75%   {left:300vw;}
 }
 @keyframes example2 {
-    0%   {left:-210vw;}
-    75%   {left:180vw;}
+    0%   {left:-260vw;}
+    75%   {left:300vw;}
 }
 @keyframes example3 {
-    0%   {left:-290vw;}
-    75%   {left:180vw;}
+    0%   {left:-340vw;}
+    75%   {left:300vw;}
 }
 @keyframes example4 {
-    0%   {left:-250vw;}
-    75%   {left:180vw;}
+    0%   {left:-300vw;}
+    75%   {left:300vw;}
 }
 @keyframes example5 {
-    0%   {left:-330vw;}
-    75%   {left:180vw;}
+    0%   {left:-380vw;}
+    75%   {left:300vw;}
 }
 @keyframes example6 {
-    0%   {left:-290vw;}
-    75%   {left:180vw;}
+    0%   {left:-340vw;}
+    75%   {left:300vw;}
 }
 @keyframes example7 {
-    0%   {left:-330vw;}
-    75%   {left:180vw;}
+    0%   {left:-380vw;}
+    75%   {left:300vw;}
 }
 @keyframes example8 {
-    0%   {left:-370vw;}
-    75%   {left:180vw;}
+    0%   {left:-420vw;}
+    75%   {left:300vw;}
 }
