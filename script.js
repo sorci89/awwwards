@@ -39,12 +39,48 @@ function loadLandingPage(){
   `); 
 }
 
+/* 
+Flóra loading stripe + counter 
+*/
+function loading() {
+    
+    loadingStripe = document.createElement("div");
+    loadingStripe.classList.add("fl");
+    document.getElementById("root").appendChild(loadingStripe);
 
+    loadingText = document.createElement("div");
+    loadingText.classList.add("loading");
+    document.getElementById("root").appendChild(loadingText);
+    loadingText.innerHTML = "Loading";
+   
+
+/*     let i = 0;
+    let txt = "Loading"; 
+    let speed = 50; 
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.querySelector("loadingText").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+    }
+    typeWriter();
+    setTimeout(() => loadingText.remove(), 4000);
+ */    loadingCounter = document.createElement("div");
+    loadingCounter.classList.add("counter");
+    document.getElementById("root").appendChild(loadingCounter);
+        for (let i=0; i < 101; i+=3) {
+            loadingCounter.innerHTML = `${i}%`
+            setTimeout('', 100);
+}
+}
 
 
 function loadEvent() {
     stripesRunningAcrossTheScreen ();
     loadLandingPage();
+    loading();
 }
 
 window.addEventListener("load", loadEvent);
