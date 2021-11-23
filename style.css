@@ -289,7 +289,7 @@ button, input, textarea, select {
     align-items: center;
   
     margin: 0 1vh;
-    padding: 0 4vh;
+    padding: 4vh 4vh;
     
     background-color: transparent;
     
@@ -318,26 +318,19 @@ button, input, textarea, select {
     pointer-events: auto;
 }
   
-.buttonSpanOui::before {
+.buttonSpan::before {
     content: "";
+    padding-top: 5px;
     border-top: 1.5px solid #d0d0d0;
     display: block;
-}
+  }
   
-.buttonSpanOui::after {
+  .buttonSpan::after {
     content: "";
+    padding-bottom: 5px;
     border-bottom: 1.5px solid #d0d0d0;
     display: block;
-}
-.buttonSpanNon::before {
-    content: "";
-    border-top: 1.5px solid #d0d0d0;
-    display: block;
-}
-.buttonSpanNon::after {
-    content: "";
-    border-bottom: 1.5px solid #d0d0d0;
-    display: block;
-}
+  }
+  
   
   
