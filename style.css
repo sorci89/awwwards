@@ -40,3 +40,104 @@ button, input, textarea, select {
     -webkit-appearance: none !important;
     border-radius: 0
 }
+
+#root {
+    position: relative;
+    width: 180vw;
+    height: 100vh;
+    background-color: #FAF8F5;
+    border: 1px solid black;
+}
+
+#stripebox {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    top: 50%;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.basicblue{
+    position: absolute;
+    left: 230vw;
+    width: 250vw;
+    height: 1.6vh;
+    background-color: #121247;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+.yellow{
+    position: absolute;
+    left: 230vw;
+    width: 250vw;
+    height: 1.6vh; 
+    background-color: #FFD732;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+.poz1{
+    margin: 4vh 0;
+    animation-name: example1;
+}
+.poz2{
+    margin: 10vh 0;
+    animation-name: example2;
+}
+.poz3{
+    margin: 16vh 0;
+    animation-name: example3;
+}
+.poz4{
+    margin: 22vh 0;
+    animation-name: example4;
+}
+.poz5{
+    margin: 28vh 0;
+    animation-name: example5;
+}
+.poz6{
+    margin: 34vh 0;
+    animation-name: example6;
+}
+.poz7{
+    margin: 40vh 0;
+    animation-name: example7;
+}
+.poz8 {
+    margin: 46vh 0;
+    animation-name: example8;
+}
+
+@keyframes example1 {
+    0%   {left:-300vw;}
+    75%   {left:300vw;}
+}
+@keyframes example2 {
+    0%   {left:-260vw;}
+    75%   {left:300vw;}
+}
+@keyframes example3 {
+    0%   {left:-340vw;}
+    75%   {left:300vw;}
+}
+@keyframes example4 {
+    0%   {left:-300vw;}
+    75%   {left:300vw;}
+}
+@keyframes example5 {
+    0%   {left:-380vw;}
+    75%   {left:300vw;}
+}
+@keyframes example6 {
+    0%   {left:-340vw;}
+    75%   {left:300vw;}
+}
+@keyframes example7 {
+    0%   {left:-380vw;}
+    75%   {left:300vw;}
+}
+@keyframes example8 {
+    0%   {left:-420vw;}
+    75%   {left:300vw;}
+}
