@@ -227,3 +227,42 @@ button, input, textarea, select {
     width: 250px;
     height: 65px;
 }
+
+/* Flóra loading csík és számlámó */
+
+.fl {
+    position: absolute;
+    bottom: 30px;
+    left: 30vw;
+    width: 0;
+    height: 3px;
+    background-color: #FFD732;
+    animation-name: loadingStripe;
+    animation-duration: 4s; 
+}
+
+@keyframes loadingStripe {
+    0% {width: 0px; opacity: 0;}
+    1% {width: 1px; opacity: 1;}
+    100% {width: 40vw;}
+}
+
+.loading, 
+.counter {
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    font-family: Catacumba Pro, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.5em;
+    color: #121247;
+}
+
+.loading {
+    left: 30vw;
+}
+
+.counter {
+    transform: translateX(67vw);
+}
+
+
