@@ -110,31 +110,31 @@ button, input, textarea, select {
 }
 
 @keyframes example1 {
-    0%   {left:-300vw;}
+    0%   {left:-220vw;}
     75%   {left:300vw;}
 }
 @keyframes example2 {
-    0%   {left:-260vw;}
-    75%   {left:300vw;}
-}
-@keyframes example3 {
-    0%   {left:-340vw;}
-    75%   {left:300vw;}
-}
-@keyframes example4 {
     0%   {left:-300vw;}
     75%   {left:300vw;}
 }
-@keyframes example5 {
-    0%   {left:-380vw;}
+@keyframes example3 {
+    0%   {left:-260vw;}
     75%   {left:300vw;}
 }
-@keyframes example6 {
+@keyframes example4 {
     0%   {left:-340vw;}
     75%   {left:300vw;}
 }
-@keyframes example7 {
+@keyframes example5 {
+    0%   {left:-300vw;}
+    75%   {left:300vw;}
+}
+@keyframes example6 {
     0%   {left:-380vw;}
+    75%   {left:300vw;}
+}
+@keyframes example7 {
+    0%   {left:-340vw;}
     75%   {left:300vw;}
 }
 @keyframes example8 {
