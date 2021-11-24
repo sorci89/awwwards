@@ -155,11 +155,11 @@ body{
     z-index: 2;
     
     display: flex;
-    justify-content: center;
     position: absolute;
     top: 50vh;
     left: 50vw;
     transform: translate(-50%,-50%);
+    justify-content: center;
 }
 
 .bence .bottle{
@@ -173,16 +173,16 @@ body{
 }
 
 .bence .text-container{
+    display: flex;
     opacity: 1;
 
-    display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+
     color: #121247;
     line-height: 1.03;
     letter-spacing: 0em;
-    font-family: Catacumba Pro;
     
     animation-name: landing1;
     animation-duration: 4s;
@@ -194,34 +194,45 @@ body{
 }
 
 .bence .text-container .animated-text{
-    font-size: 5.7vw;
+    font-size: 6.5vw;
+    font-family: 'EB Garamond', serif;
 }
 
 .bence .text-container .animated-text .text2 {
     color: #ffd732;
+    font-style: italic;
 }
 
 .bence .text-container .question-text{
-    font-size: 1.6vw;
-    padding: 5% 20% 8%;
+    padding: 5% 19% 8%;
+
     line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+    font-weight: bold;
+
     animation-name: fadeIn;
     animation-duration: 4.8s;
 }
 
 .bence .text-container .box1, .bence .text-container .box2 {
-    height: 7.5vw;
-    overflow: hidden;
+    height: 10vw;
     width: 100%;
+    overflow: hidden;
   }
 
   .bence .text-container .box1 div, .bence .text-container .box2 div{
-    animation-name: textUp;
-    animation-duration: 4.5s;
-    animation-fill-mode: forwards;
-    top: 0;
-    transform: translate(0, -100%);
-    overflow:hidden;
+      top: 0;
+      transform: translate(0, -100%);
+      overflow:hidden;
+
+      animation-name: textUp;
+      animation-duration: 4.5s;
+      animation-fill-mode: forwards;
+  }
+
+  .bence .text-container .box2, .bence .text-container .box2 div{
+      height: 11vw;
   }
 
 @media screen and (max-width: 1024px){
@@ -288,7 +299,7 @@ body{
   }
 
   .borderDiv{
-      height: 10vw;
+      height: 10.5vw;
   }
 
 
