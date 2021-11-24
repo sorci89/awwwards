@@ -164,17 +164,20 @@ body{
 
 .bence .bottle{
     height: 100%;
+    margin:0 1vw 0;
 }
 
 .bence .bottle-container{
     animation-name: landing2;
-    animation-duration: 4s;
+    animation-duration: 4.5s;
 }
 
 .bence .text-container{
     opacity: 1;
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     color: #121247;
     line-height: 1.03;
@@ -185,8 +188,9 @@ body{
     animation-duration: 4s;
 }
 
-.bence .text-container .logo img{
+.bence .text-container .logo svg{
     width: 10vw;
+    margin-bottom: 4vw;  
 }
 
 .bence .text-container .animated-text{
@@ -199,36 +203,94 @@ body{
 
 .bence .text-container .question-text{
     font-size: 1.6vw;
-    padding: 0 20% 7%;
+    padding: 5% 20% 8%;
     line-height: 1.5;
+    animation-name: fadeIn;
+    animation-duration: 4.8s;
 }
 
-@media screen and (max-width: 1000px){
+.bence .text-container .box1, .bence .text-container .box2 {
+    height: 7.5vw;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .bence .text-container .box1 div, .bence .text-container .box2 div{
+    animation-name: textUp;
+    animation-duration: 4.5s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(0, -100%);
+    overflow:hidden;
+  }
+
+@media screen and (max-width: 1024px){
     .bence .bottle4{
         display: none;
     }
     .bence .bottle-container{
         height: 65vw;
     }
-} 
+    .bence .text-container .logo svg{
+        width: 14vw;
+    }
+    .bence .text-container .animated-text{
+        font-size: 7.98vw;
+    }
+    .bence .text-container .question-text{
+        font-size: 2.24vw;
+    }
+    .bence .text-container .box1, .bence .text-container .box2 {
+        overflow: visible;
+    }
+    .bence .text-container .box2{
+        width: 65vw;
+    }
+}
+
+@media screen and (max-width: 764px){
+    .bence .text-container{
+        height: 2vw;
+    }
+    .bence .text-container .logo svg{
+        width: 16.8vw;
+    }
+    .bence .text-container .animated-text{
+        font-size: 5.7vw;
+    }
+    .bence .text-container .question-text{
+        font-size: 2.68vw;   
+    }
+}
 
 @keyframes landing1 {
     0%   {opacity: 0;}
-    99%  {opacity: 0;}
+    90%  {opacity: 0;}
     100% {opacity: 1;}
 }
 
 @keyframes landing2 {
     0%   {opacity: 0;}
-    99%  {opacity: 0;}
+    80%  {opacity: 0;}
     100% {opacity: 0.06;}
 }
 
-.logo svg{
-    margin-top: 20px;
-    width: 250px;
-    height: 65px;
+@keyframes fadeIn {
+    0%   {opacity: 0;}
+    90%   {opacity: 0;}
+    100% {opacity: 1;}
 }
+
+@keyframes textUp {
+    0% { transform: translate3d(0, 150%, 0); }
+    70% { transform: translate3d(0, 150%, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+  }
+
+  .borderDiv{
+      height: 10vw;
+  }
+
 
 /* Flóra loading csík és számlámó */
 
