@@ -191,7 +191,7 @@ body{
 
 .bence .text-container .logo svg{
     width: 10vw;
-    margin-bottom: 3.5vw;  
+    margin-bottom: 3vw;
 }
 
 .bence .text-container .animated-text{
@@ -269,8 +269,12 @@ body{
         font-size: 5.7vw;
     }
     .bence .text-container .question-text{
-        font-size: 2.68vw;   
+        font-size: 2.68vw;
+        padding: 0% 13% 0%; 
     }
+    .bence .text-container .box1 div, .bence .text-container .box2 div{
+        display: inline;
+    }    
 }
 
 @keyframes landing1 {
