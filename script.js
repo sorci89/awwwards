@@ -44,7 +44,6 @@ function loadLandingPage(){
   </div>  
 </div>
 <div class="question-text">Avez-vous l’âge légal afin de consommer de l’alcool dans votre pays ?</div>
-<div class="borderDiv"></div>
 <div class="buttonDiv">
   <button type="button" id="buttonOui" class="button">
      <span class="buttonSpan buttonSpanOui">Oui</span>
