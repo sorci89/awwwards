@@ -76,10 +76,20 @@ function loading() {
     loadingCounter = document.createElement("div");
     loadingCounter.classList.add("counter");
     document.getElementById("root").appendChild(loadingCounter);
-    for (let i=0; i < 101; i+=3) {
-        loadingCounter.innerHTML = `${i}%`
-        setTimeout('', 300);
+    // Számláló BY ZSOLT----------------------------
+    var num = 1;                  
+    function myLoop() {         
+      setTimeout(function() {   
+        loadingCounter.innerHTML = `${num}%`;   
+        num++;                    
+        if (num < 101) {           
+          myLoop();             
+        }                       
+      }, 34)
     }
+    myLoop(); 
+    //---------------------------------------------
+
     setTimeout(() => loadingCounter.remove(), 4000);
 }
 
