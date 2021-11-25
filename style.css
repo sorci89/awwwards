@@ -352,16 +352,13 @@ body{
 /*Eszti gombok */
 
 .buttonDiv {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     
-    position: absolute;
     margin: 3vh 0;
-    bottom: 0px;
     left: 50%;
-    transform: translateX(-50%);
-  
+    
     height: 11vh;
    
     pointer-events: none;
