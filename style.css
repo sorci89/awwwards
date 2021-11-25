@@ -387,7 +387,11 @@ body{
 }
   
 .buttonSpan {
+    position: relative;
     width: 10vw;
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+
     font-weight: 500;
     font-size: 3vw;
     text-transform: Capitalize;
@@ -406,20 +410,68 @@ body{
 .buttonDiv > * {
     pointer-events: auto;
 }
-  
-.buttonSpan::before {
+
+.buttonSpanOui::before {
+    position: absolute;
+    top: 5%;
     content: "";
-    padding-top: 5px;
-    border-top: 1.5px solid #d0d0d0;
-    display: block;
-  }
+    width: 0%;
+    height: 1px;
+    background-color: #d0d0d0;
+    left: 50%;
+    transition: all 0.4s ease-in-out;
+}
   
-  .buttonSpan::after {
+#buttonOui:hover .buttonSpanOui::before{
+    width: 100%;
+    left: 0;
+}
+.buttonSpanOui::after {
+    position: absolute;
+    bottom: 5%;
     content: "";
-    padding-bottom: 5px;
-    border-bottom: 1.5px solid #d0d0d0;
-    display: block;
-  }
+    width: 0%;
+    height: 1px;
+    background-color: #d0d0d0;
+    left: 50%;
+    transition: all 0.4s ease-in-out;
+}
   
+#buttonOui:hover .buttonSpanOui::after{
+    width: 100%;
+    left: 0;
+}
+  
+.buttonSpanNon::before {
+    position: absolute;
+    top: 5%;
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: #d0d0d0;
+    left: 50%;
+    transition: all 0.4s ease-in-out;
+}
+  
+#buttonNon:hover .buttonSpanNon::before{
+    width: 100%;
+    left: 0;
+}
+  
+.buttonSpanNon::after {
+    position: absolute;
+    bottom: 5%;
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: #d0d0d0;
+    left: 50%;
+    transition: all 0.4s ease-in-out;
+}
+  
+#buttonNon:hover .buttonSpanNon::after{
+    width: 100%;
+    left: 0;
+}
   
   
