@@ -223,9 +223,7 @@ body{
 
   .bence .text-container .box1 div, .bence .text-container .box2 div{
       top: 0;
-      transform: translate(0, -100%);
-      overflow:hidden;
-
+      
       animation-name: textUp;
       animation-duration: 4.5s;
       animation-fill-mode: forwards;
@@ -293,9 +291,9 @@ body{
 }
 
 @keyframes textUp {
-    0% { transform: translate3d(0, 150%, 0); }
-    70% { transform: translate3d(0, 150%, 0); }
-    100% { transform: translate3d(0, 0, 0); }
+    0% { transform: translate(0, 100%); }
+    70% { transform: translate(0, 100%); }
+    100% { transform: translate(0, 0); }
   }
 
   .borderDiv{
