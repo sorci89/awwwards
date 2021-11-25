@@ -365,6 +365,9 @@ body{
     height: 11vh;
    
     pointer-events: none;
+
+    animation-name: fadeIn;
+    animation-duration: 4.8s;
 }
   
 .button {
