@@ -70,7 +70,7 @@ function loading() {
     loadingText = document.createElement("div");
     loadingText.classList.add("loading");
     document.getElementById("root").appendChild(loadingText);
-    loadingText.innerHTML = "Loading";
+    loadingText.innerHTML = "Loading...";
     setTimeout(() => loadingText.remove(), 4000);
     
     loadingCounter = document.createElement("div");

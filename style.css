@@ -333,8 +333,19 @@ body{
 }
 
 .loading {
+    white-space: nowrap;
+    overflow: hidden;
     left: 30vw;
+
+    animation: animated-text 1s steps(15,end) 4 normal both;
 }
+
+@keyframes animated-text{
+    0% {width: 0; opacity: 0;}
+    2% {opacity: 1;}
+    100% {width: 100px;}
+}
+
 
 .counter {
     transform: translateX(67vw);
