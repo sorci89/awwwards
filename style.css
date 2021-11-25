@@ -175,7 +175,7 @@ body{
 .bence .text-container{
     display: flex;
     opacity: 1;
-    height: 78%;
+   /*  height: 78%; */
 
     flex-direction: column;
     justify-content: center;
